@@ -7,17 +7,29 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MetroComponent } from './pages/metro/metro.component';
+import { TremComponent } from './pages/trem/trem.component';
+import { RedeComponent } from './pages/rede/rede.component';
+import { InfosComponent } from './pages/infos/infos.component';
+import { TrajetoComponent } from './pages/trajeto/trajeto.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    SidebarComponent
+    MetroComponent,
+    TremComponent,
+    RedeComponent,
+    InfosComponent,
+    TrajetoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +38,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatSlideToggleModule
+    MatGridListModule,
+    MatSlideToggleModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
